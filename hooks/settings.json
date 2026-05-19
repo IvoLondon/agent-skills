@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "SCAN_MODE=block SCAN_SCOPE=diff ~/.copilot/hooks/scan-secrets.sh",
+        "timeout": 30
+      },
+      {
+        "type": "command",
+        "command": "~/.copilot/hooks/record-conversation.sh",
+        "timeout": 10
+      }
+    ]
+  }
+}
